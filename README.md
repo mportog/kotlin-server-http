@@ -17,7 +17,7 @@ Criar uma aplicação que use Kotlin no código do servidor, sendo possivel usar
 ### Teste
 Afins de teste, as chamadas devem ser feitas da seguinte forma:
 
-Ao rodar a aplicação, consulta pode ser facilmente feita via [Postman](), para isso basta:
+Ao rodar a aplicação, consulta pode ser facilmente feita via [Postman](https://www.postman.com/downloads/), para isso basta:
 - Adicionar ao Header das chamadas Content-Type : application/json
 - Usar do endereço : http://127.0.0.1:8080/customer/{id} para uma requisição do tipo HHTP GET. Onde {id} corresponde ao Id do cliente a ser consultado e remover o /{id} caso queira consultar todos os clientes
 - Usardo endereço : http://127.0.0.1:8080/customer para uma requisição do tipo HTTP POST. Onde o corpo da requisição seja um JSON da seguinte forma:
