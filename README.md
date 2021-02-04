@@ -19,11 +19,13 @@ Afins de teste, as chamadas devem ser feitas da seguinte forma:
 
 Ao rodar a aplicação, consulta pode ser facilmente feita via [Postman](https://www.postman.com/downloads/), para isso basta:
 - Adicionar ao Header das chamadas Content-Type : application/json
-- Usar do endereço : http://127.0.0.1:8080/customer/{id} para uma requisição do tipo HHTP GET. Onde {id} corresponde ao Id do cliente a ser consultado e remover o /{id} caso queira consultar todos os clientes
-- Usardo endereço : http://127.0.0.1:8080/customer para uma requisição do tipo HTTP POST. Onde o corpo da requisição seja um JSON da seguinte forma:
+- Usar do endereço : 'http://127.0.0.1:8080/customer/{id}' para uma requisição do tipo HTTP GET. Onde {id} corresponde ao Id do cliente a ser consultado e remover o /{id} caso queira consultar todos os clientes
+- Usardo endereço : 'http://127.0.0.1:8080/customer' para uma requisição do tipo HTTP POST. Onde o corpo da requisição seja um JSON da seguinte forma:
 > <p>{</p>
 > <p>"id": "1",</p>
 > <p>"firstName": "Matheus",</p>
 > <p>"lastName": "Porto",</p>
 > <p>"email": "matheusporto@anymail.com"</p>
 > <p>}</p>
+
+- Como o pedido está com número fixo no código, para a consulta do total deve ser usado o seguinte endereço: 'http://127.0.0.1:8080/order/2021-02-02-02/total' como uma requisição HTTP GET. Já para a consulta do pedido sem o total, basta remover /total do mesmo endereço.
